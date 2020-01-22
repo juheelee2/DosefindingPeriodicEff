@@ -42,8 +42,8 @@ The function returns
 ### hyper-parameters.RData: an example of fixed hyperparameters to fit the model
 The elicited fixed hyperparameter values that used for the simulations in the paper are included as .RData for your use.  You may modify for your own trial.
 
-### current_data: an example of current data to make posterior inferences
-It illusrates what is needed to fit the model with function, MCMC_Dose_Finding_Periodic_Eff. 
+### current_data.RData: an example of current data to make posterior inferences
+It illusrates an example of the current data to fit the model with function, MCMC_Dose_Finding_Periodic_Eff. 
 1. N_t: the number of patients who recieved a treatment at trial time t.
 2. dose: a N_t-dim vector of the doses that the patients were treated at.
 3. t_star: a N_t*2 matrix of t_star (scheduled times for imaging)
@@ -53,4 +53,7 @@ It illusrates what is needed to fit the model with function, MCMC_Dose_Finding_P
 7. ind_PD: a N_t-dim binary indicator vector, where PD is observed from continuous monitoring by signs and symptoms.  
 
 
+### ini_sam.RData: an example of initial values of the random parameters
+It illusrates an example of initial values of the random parameters to fit the model with function, MCMC_Dose_Finding_Periodic_Eff. 
 
+### trial-parameters.R: includes trial parameters such as J, K, M etc, that are needed to run a trial.
