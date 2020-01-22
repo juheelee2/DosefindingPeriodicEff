@@ -2,7 +2,9 @@
 A Bayesian design for a phase I-II clinical trial to find an optimal dose based on periodic and continuous monitoring of disease status and the times to tox and death.
 
 
+### R package: DosefindingPeriodicEff_1.0.tar.gz
 STEP 1: download R package file: DosefindingPeriodicEff_1.0.tar.gz
+
 STEP 2: the package is installed, do not need to install again.
 install.packages("DosefindingPeriodicEff_1.0.tar.gz", repos = NULL, type="source")
 library("DosefindingPeriodicEff")
@@ -37,3 +39,4 @@ The function returns
 3. $cur_sam: the last MCMC sample of the random parameters.
 
 
+### hyper-parameters.RData: an example of fixed hyperparameters to fit the model
