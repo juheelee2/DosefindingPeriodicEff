@@ -22,8 +22,8 @@ The package has a function which performs posterior simulations and provides the
 ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) output <- MCMC_Dose_Finding_Periodic_Eff(hpara, current_data, J, K, L, M, zeta_bar, p_star, dose, accp_chk, follow_up, utility, ini_sam, n_sam, n_burn)
 
 The function, MCMC_Dose_Finding_Periodic_Eff, takes inputs
-1. hpara: a list of the fixed hyperparameter values
-2. current data: the most updated clinical outcomes data
+1. hpara: a list of the fixed hyperparameter values. An example of hpara is included as a separate .RData file (hyper-parameters.RData).
+2. current data: the most updated clinical outcomes data An example of current_data is included as a separate .RData file (current_data.RData).
 3. J: the number of outcomes, in our example trial, we have outcomes, PD, Toxicity and Death, so J=3
 4. K: the number of categories of disease status, in our example trial, we have four categories, PD, SD, PR, CR, so K=4
 5. L: the number of scheduled times for disease status, in our example trial, we have two scheduled monitoring of disease status by imaging, so L=2
@@ -33,10 +33,12 @@ The function, MCMC_Dose_Finding_Periodic_Eff, takes inputs
 9. dose: a M-dim vector of standardized doses
 10. accp_chk: binary indictor for acceptability check.  If accp_chk=0, do not conduct the acceptability check and let all doses acceptable. If accp_chk=1, conduct the acceptability check.
 11. follow_up: a J-dim vector of the lengths of the follow-up period for the outcomes. in our example trial, we have (84, 84, 84).
-12. utility: a vectorized utility.  An example is given in Table 1 of the paper
-13. ini_sam: the initial values of the random parameters to run MCMC
+12. utility: a vectorized utility.  An example is given in Table 1 of the paper. 
+13. ini_sam: the initial values of the random parameters to run MCMC. An example of ini_sam is included as a separate .RData file (ini_sam.RData).
 14. n_sam: the number of samples that will be used for the inference such as expected utility computation and acceptability checking
 15. n_burn: the number of samples that will be discarded.  So in total, we draw N_sam + N_burn samples of the random parameters from the posterior distribution.
+
+** An example of the trial parameters such as J, K, L etc is included in a separate .R file (Trial-parameters.R)
 
 The function returns
 1. $Tab_Safety: a M-dim binary indicator vector (1: Acceptable, 0: Not acceptable)
@@ -62,3 +64,12 @@ It illusrates an example of the current data to fit the model with function, MCM
 It illusrates an example of initial values of the random parameters to fit the model with function, MCMC_Dose_Finding_Periodic_Eff. 
 
 ### ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) trial-parameters.R: includes trial parameters such as J, K, M etc, that are needed to run a trial.
+
+
+### ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)  To execute an example of the posterior inference, 
+
+Step 1: load all .RData files, load("current_data.RData"), load("hyper-parameters.RData"), load("ini_sam.RData")
+Step 2: load all trial parameters, source("Trial-parameters.R")
+Step 3: specify MCMC parameters, n_sam and n_burn
+Step 4: call the function, MCMC_Dose_Finding_Periodic_Eff  
+output <- MCMC_Dose_Finding_Periodic_Eff(hpara, current_data, J, K, L, M, zeta_bar, p_star, dose, accp_chk, follow_up, utility, ini_sam, n_sam, n_burn)
