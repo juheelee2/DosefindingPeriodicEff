@@ -4,7 +4,8 @@ A Bayesian design for a phase I-II clinical trial to find an optimal dose based 
 
 ### R package: DosefindingPeriodicEff_1.0.tar.gz
 STEP 1: download R package file: DosefindingPeriodicEff_1.0.tar.gz
-STEP 2: install the package is installed.
+STEP 2: install the package
+STEP 3: load the package into your R workspace
 
 install.packages("DosefindingPeriodicEff_1.0.tar.gz", repos = NULL, type="source")
 library("DosefindingPeriodicEff")
