@@ -9,9 +9,9 @@ STEP 2: install the package
 
 STEP 3: load the package into your R workspace
 
-![#1589F0](https://placehold.it/15/1589F0/000000?text=+)  install.packages("DosefindingPeriodicEff_1.0.tar.gz", repos = NULL, type="source")
+> install.packages("DosefindingPeriodicEff_1.0.tar.gz", repos = NULL, type="source")
 
-![#1589F0](https://placehold.it/15/1589F0/000000?text=+)  library("DosefindingPeriodicEff")'
+> library("DosefindingPeriodicEff")'
 
 
 The package has a function which performs posterior simulations and provides the following.
@@ -19,7 +19,7 @@ The package has a function which performs posterior simulations and provides the
 2. Acceptability binary indicator for each dose (1: Acceptable, 0: Not acceptable).
 3. The last sample of the random parameters
 
-![#1589F0](https://placehold.it/15/1589F0/000000?text=+) output <- MCMC_Dose_Finding_Periodic_Eff(hpara, current_data, J, K, L, M, zeta_bar, p_star, dose, accp_chk, follow_up, utility, ini_sam, n_sam, n_burn)
+> output <- MCMC_Dose_Finding_Periodic_Eff(hpara, current_data, J, K, L, M, zeta_bar, p_star, dose, accp_chk, follow_up, utility, ini_sam, n_sam, n_burn)
 
 The function, MCMC_Dose_Finding_Periodic_Eff, takes inputs
 1. hpara: a list of the fixed hyperparameter values. An example of hpara is included as a separate .RData file (hyper-parameters.RData).
