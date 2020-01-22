@@ -82,4 +82,8 @@ Step 3: specify MCMC parameters, n_sam and n_burn, e.g.;
 
 Step 4: call the function, MCMC_Dose_Finding_Periodic_Eff  
 
+> install.packages("DosefindingPeriodicEff_1.0.tar.gz", repos = NULL, type="source")
+
+> library("DosefindingPeriodicEff")'
+
 > output <- MCMC_Dose_Finding_Periodic_Eff(hpara, current_data, J, K, L, M, zeta_bar, p_star, dose, accp_chk, follow_up, utility, ini_sam, n_sam, n_burn)
