@@ -4,8 +4,8 @@ A Bayesian design for a phase I-II clinical trial to find an optimal dose based 
 
 ### R package: DosefindingPeriodicEff_1.0.tar.gz
 STEP 1: download R package file: DosefindingPeriodicEff_1.0.tar.gz
+STEP 2: install the package is installed.
 
-STEP 2: the package is installed, do not need to install again.
 install.packages("DosefindingPeriodicEff_1.0.tar.gz", repos = NULL, type="source")
 library("DosefindingPeriodicEff")
 
@@ -40,3 +40,17 @@ The function returns
 
 
 ### hyper-parameters.RData: an example of fixed hyperparameters to fit the model
+The elicited fixed hyperparameter values that used for the simulations in the paper are included as .RData for your use.  You may modify for your own trial.
+
+### current_data: an example of current data to make posterior inferences
+It illusrates what is needed to fit the model with function, MCMC_Dose_Finding_Periodic_Eff. 
+1. N_t: the number of patients who recieved a treatment at trial time t.
+2. dose: a N_t-dim vector of the doses that the patients were treated at.
+3. t_star: a N_t*2 matrix of t_star (scheduled times for imaging)
+4. Y_obs: times to events, N_t*3 matrix of continuous times, where time to death in column 1, time to severe toxicity in column 2, and times to continous PD in column 3.
+5. delta: N_t*3 matrix of binary censoring indicators. Similar to Y_obs, time to death in column 1, time to severe toxicity in column 2, and times to continous PD in column 3.
+6. Z_obs: N_t*2 matrix of disease status categories from imaging, where each element takes 0 (PD), 1 (SD), 2 (PR), 3 (CR), and -100 (no imaging is done).
+7. ind_PD: a N_t-dim binary indicator vector, where PD is observed from continuous monitoring by signs and symptoms.  
+
+
+
