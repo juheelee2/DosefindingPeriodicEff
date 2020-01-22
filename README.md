@@ -69,7 +69,10 @@ It illusrates an example of initial values of the random parameters to fit the m
 ### ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)  To execute an example of the posterior inference, 
 
 Step 1: load all .RData files, load("current_data.RData"), load("hyper-parameters.RData"), load("ini_sam.RData")
+
 Step 2: load all trial parameters, source("Trial-parameters.R")
+
 Step 3: specify MCMC parameters, n_sam and n_burn
+
 Step 4: call the function, MCMC_Dose_Finding_Periodic_Eff  
 output <- MCMC_Dose_Finding_Periodic_Eff(hpara, current_data, J, K, L, M, zeta_bar, p_star, dose, accp_chk, follow_up, utility, ini_sam, n_sam, n_burn)
