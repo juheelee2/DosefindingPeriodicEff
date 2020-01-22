@@ -1,5 +1,5 @@
 # DosefindingPeriodicEff
-A Bayesian design for a phase I-II clinical trial to find an optimal dose based on periodic and continuous monitoring of disease status and the times to tox and death.
+A Bayesian design for a phase I-II clinical trial to find an optimal dose based on periodic and continuous monitoring of disease status and the times to tox and death.  The R package implements posterior computation of the model in the paper, "A Phase I-II Design Based On Periodic and Continuous Monitoring of Disease Status and the Times to Toxicity and Death" by Lee, Thall and Msaouel (2020+).  We also post an example of fixed hyperparameter values, clinical outcome data collected for statistical inferences and initial values of the random parameters.  
 
 
 ### R package: DosefindingPeriodicEff_1.0.tar.gz
