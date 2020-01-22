@@ -70,11 +70,16 @@ It illusrates an example of initial values of the random parameters to fit the m
 
 Step 1: load all .RData files into your R workspace, 
 
-> load("current_data.RData"), load("hyper-parameters.RData"), load("ini_sam.RData")
+> load("current_data.RData"); load("hyper-parameters.RData"); load("ini_sam.RData")
 
-Step 2: load all trial parameters, source("Trial-parameters.R")
+Step 2: load all trial parameters, 
 
-Step 3: specify MCMC parameters, n_sam and n_burn
+> source("Trial-parameters.R")
+
+Step 3: specify MCMC parameters, n_sam and n_burn, e.g.;
+
+> n_sam <- 3000; n_burn <- 3000
 
 Step 4: call the function, MCMC_Dose_Finding_Periodic_Eff  
-output <- MCMC_Dose_Finding_Periodic_Eff(hpara, current_data, J, K, L, M, zeta_bar, p_star, dose, accp_chk, follow_up, utility, ini_sam, n_sam, n_burn)
+
+> output <- MCMC_Dose_Finding_Periodic_Eff(hpara, current_data, J, K, L, M, zeta_bar, p_star, dose, accp_chk, follow_up, utility, ini_sam, n_sam, n_burn)
