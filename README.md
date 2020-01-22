@@ -38,7 +38,7 @@ The function, MCMC_Dose_Finding_Periodic_Eff, takes inputs
 14. ***n_sam:*** the number of samples that will be used for the inference such as expected utility computation and acceptability checking
 15. ***n_burn:*** the number of samples that will be discarded.  So in total, we draw N_sam + N_burn samples of the random parameters from the posterior distribution.
 
-* - An example of the trial parameters such as J, K, L etc is included in a separate .R file (Trial-parameters.R)* 
+- * An example of the trial parameters such as J, K, L etc is included in a separate .R file (Trial-parameters.R)* 
 
 The function returns
 1. $Tab_Safety: a M-dim binary indicator vector (1: Acceptable, 0: Not acceptable)
