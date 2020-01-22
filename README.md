@@ -9,9 +9,9 @@ STEP 2: install the package
 
 STEP 3: load the package into your R workspace
 
-![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `#1589F0` install.packages("DosefindingPeriodicEff_1.0.tar.gz", repos = NULL, type="source")
+![#1589F0](https://placehold.it/15/1589F0/000000?text=+)  install.packages("DosefindingPeriodicEff_1.0.tar.gz", repos = NULL, type="source")
 
-![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `#1589F0` library("DosefindingPeriodicEff")'
+![#1589F0](https://placehold.it/15/1589F0/000000?text=+)  library("DosefindingPeriodicEff")'
 
 
 The package has a function which performs posterior simulations and provides the following.
