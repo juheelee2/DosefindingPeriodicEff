@@ -68,7 +68,9 @@ It illusrates an example of initial values of the random parameters to fit the m
 
 ### ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)  To execute an example of the posterior inference, 
 
-Step 1: load all .RData files, load("current_data.RData"), load("hyper-parameters.RData"), load("ini_sam.RData")
+Step 1: load all .RData files into your R workspace, 
+
+> load("current_data.RData"), load("hyper-parameters.RData"), load("ini_sam.RData")
 
 Step 2: load all trial parameters, source("Trial-parameters.R")
 
