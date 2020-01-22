@@ -2,7 +2,7 @@
 A Bayesian design for a phase I-II clinical trial to find an optimal dose based on periodic and continuous monitoring of disease status and the times to tox and death.  The R package implements posterior computation of the model in the paper, "A Phase I-II Design Based On Periodic and Continuous Monitoring of Disease Status and the Times to Toxicity and Death" by Lee, Thall and Msaouel (2020+).  We also post examples of fixed hyperparameter values, clinical outcome data collected for statistical inferences and initial values of the random parameters.  
 
 
-### R package: DosefindingPeriodicEff_1.0.tar.gz
+### ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) R package: DosefindingPeriodicEff_1.0.tar.gz
 STEP 1: download R package file: DosefindingPeriodicEff_1.0.tar.gz
 
 STEP 2: install the package
@@ -19,7 +19,7 @@ The package has a function which performs posterior simulations and provides the
 2. Acceptability binary indicator for each dose (1: Acceptable, 0: Not acceptable).
 3. The last sample of the random parameters
 
-![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `#1589F0` output <- MCMC_Dose_Finding_Periodic_Eff(hpara, current_data, J, K, L, M, zeta_bar, p_star, dose, accp_chk, follow_up, utility, ini_sam, n_sam, n_burn)
+![#1589F0](https://placehold.it/15/1589F0/000000?text=+) output <- MCMC_Dose_Finding_Periodic_Eff(hpara, current_data, J, K, L, M, zeta_bar, p_star, dose, accp_chk, follow_up, utility, ini_sam, n_sam, n_burn)
 
 The function, MCMC_Dose_Finding_Periodic_Eff, takes inputs
 1. hpara: a list of the fixed hyperparameter values
@@ -44,10 +44,10 @@ The function returns
 3. $cur_sam: the last MCMC sample of the random parameters.
 
 
-### hyper-parameters.RData: an example of fixed hyperparameters to fit the model
+### ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) hyper-parameters.RData: an example of fixed hyperparameters to fit the model
 The elicited fixed hyperparameter values that used for the simulations in the paper are included as .RData for your use.  You may modify for your own trial.
 
-### current_data.RData: an example of current data to make posterior inferences
+### ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) current_data.RData: an example of current data to make posterior inferences
 It illusrates an example of the current data to fit the model with function, MCMC_Dose_Finding_Periodic_Eff. 
 1. N_t: the number of patients who recieved a treatment at trial time t.
 2. dose: a N_t-dim vector of the doses that the patients were treated at.
@@ -58,7 +58,7 @@ It illusrates an example of the current data to fit the model with function, MCM
 7. ind_PD: a N_t-dim binary indicator vector, where PD is observed from continuous monitoring by signs and symptoms.  
 
 
-### ini_sam.RData: an example of initial values of the random parameters
+### ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) ini_sam.RData: an example of initial values of the random parameters
 It illusrates an example of initial values of the random parameters to fit the model with function, MCMC_Dose_Finding_Periodic_Eff. 
 
-### trial-parameters.R: includes trial parameters such as J, K, M etc, that are needed to run a trial.
+### ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) trial-parameters.R: includes trial parameters such as J, K, M etc, that are needed to run a trial.
